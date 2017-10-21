@@ -10,6 +10,9 @@ class Song
   def self.new_by_filename(file_name)
     new_instance = file_name.split(" - ")[1]
     self.new(new_instance)
+    new_instance.artist = self
+    new_instance
+    
     binding.pry
   end
 
