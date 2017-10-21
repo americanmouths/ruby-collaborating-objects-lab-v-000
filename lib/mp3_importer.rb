@@ -1,3 +1,5 @@
+require 'pry'
+
 class MP3Importer
   attr_accessor :path
 
@@ -8,6 +10,7 @@ class MP3Importer
   def files
     @files = Dir.foreach("./db/mp3s/*") do |item|
       item
+      binding.pry
     end
 
   end
