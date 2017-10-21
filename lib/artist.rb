@@ -15,4 +15,8 @@ class Artist
    @songs
  end
 
+ def save
+   @@all.save
+ end
+
 end
