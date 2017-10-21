@@ -7,7 +7,7 @@ class MP3Importer
   end
 
   def files
-    Dir("./db/mp3s/*")
+    @files = Dir("./db/mp3s/*")
  end
 
   def import(list_of_file_names)
