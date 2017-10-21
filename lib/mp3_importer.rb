@@ -15,7 +15,7 @@ class MP3Importer
 
   def import
     @files = Dir.entries(@path)
-    @files.uniq.
+    @files.uniq
     @files.delete(".")
     @files.delete("..")
     @files.each{ |filename|
