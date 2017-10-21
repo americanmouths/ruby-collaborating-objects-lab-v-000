@@ -25,18 +25,19 @@ class Artist
  end
 
  def self.find_by_name(name)
-   @name.detect{ |n| n.name == name }
+   @@all.find{|artist| artist.name == name }
    name
  end
 
  def self.create_by_name(name)
-   name = self.new(name)
+   artist = self.new(name)
+   @@all << artist
+   artist
 end
 
 def self.find_or_create_by_name(name)
   self.find_by_name(name) || self.create_by_name(name)
 end
-
 
  def print_songs
    @songs.each{|s| puts s.name}
