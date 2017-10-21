@@ -27,7 +27,7 @@ class Artist
  end
 
  def self.find_or_create_by_name(name)
-   if (self.name.nil?)
+   self.name.nil?
      binding.pry
  end
  end
