@@ -29,7 +29,6 @@ class Artist
  def self.find_by_name(name)
    @name.detect{ |n| n.name == name }
    name
-   binding.pry
  end
 
  def self.create_by_name(name)
