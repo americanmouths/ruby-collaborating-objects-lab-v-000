@@ -26,7 +26,7 @@ class Artist
  end
 
  def self.find_or_create_by_name(name)
-   @names.each do |s|
+   @name.each do |s|
    if s.name.nil?
      s.name = Artist.new(s.name)
    else
