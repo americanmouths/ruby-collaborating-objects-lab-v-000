@@ -21,9 +21,14 @@ class Artist
    else
      self.artist.name = name
    end
+ end
 
  def save
    @@all.save
+ end
+
+ def print_songs
+   @@all
  end
 
 end
