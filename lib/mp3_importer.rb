@@ -6,7 +6,7 @@ class MP3Importer
   end
 
   def files
-    @files = Dir["./db/mp3/search/*"]
+    @files = Dir["./db/mp3s/search/*"].each {|file| require file }
   end
 
   def import(list_of_file_names)
