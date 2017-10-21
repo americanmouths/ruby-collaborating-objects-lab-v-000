@@ -1,12 +1,13 @@
 class MP3Importer
   attr_accessor :path
 
-  def initialize(test_music_path)
-    @path = test_music_path
+  def initialize(path)
+    @path = path
   end
 
   def files
     Dir["./spec/fixtures/mp3s/*"]
+    
  end
 
   def import(list_of_file_names)
