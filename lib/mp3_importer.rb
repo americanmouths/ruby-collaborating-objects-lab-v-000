@@ -10,6 +10,7 @@ class MP3Importer
     @files.uniq
     @files.delete(".")
     @files.delete("..")
+    @files
 
  end
 
