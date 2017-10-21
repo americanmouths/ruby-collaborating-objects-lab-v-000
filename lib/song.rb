@@ -7,7 +7,7 @@ class Song
 
   def self.new_by_filename(file_name)
     new_instance = file_name.split(" - ")[1]
-    song = Song.new(new_instance)
+    Song.new(new_instance)
   end
 
 end
