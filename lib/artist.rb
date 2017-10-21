@@ -25,12 +25,15 @@ class Artist
    @songs
  end
 
+ def self.find_by_name(name)
+   @name.detect{ |n| n.name == name }
+   name
+ end
+
+ def self.create_by_name(name)
+ end
+
  def self.find_or_create_by_name(name)
-   if (self.name.nil?)
-     Artist.new(name)
-   else
-     self.name
-   end
  end
 
  def print_songs
