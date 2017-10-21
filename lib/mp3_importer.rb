@@ -6,7 +6,7 @@ class MP3Importer
   end
 
   def files
-    @files = Dir["./db/mp3s/*"]
+    @files = Dir["./db/mp3s/*"].select{|e| e < 5}
   end
 
   def import(list_of_file_names)
