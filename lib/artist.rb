@@ -28,10 +28,6 @@ class Artist
    end
  end
 
- def save
-   @@all.save
- end
-
  def print_songs
    @@all
  end
