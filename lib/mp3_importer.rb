@@ -6,8 +6,8 @@ class MP3Importer
   end
 
   def files
-    Dir["./spec/fixtures/mp3s/*"]
-    
+    @files = Dir.entries(@path)
+
  end
 
   def import(list_of_file_names)
