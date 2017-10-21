@@ -1,5 +1,3 @@
-require 'pry'
-
 class Artist
   attr_accessor :name, :song, :title
 
@@ -32,8 +30,12 @@ class Artist
  end
 
  def self.create_by_name(name)
+   name = self.new(name)
+end
 
- end
+def self.find_or_create_by_name(name)
+  self.find_by_name(name) || self.create_by_name(name)
+end
 
 
  def print_songs
