@@ -10,11 +10,11 @@ class Song
     song = self.new(new_instance)
     song = song.artist_name=(new_instance)
     song
-    
   end
 
   def artist_name=(name)
     name = Artist.find_or_create_by_name(name)
     self.artist.name
-    
+  end
+
 end
