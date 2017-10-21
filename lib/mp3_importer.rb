@@ -8,9 +8,7 @@ class MP3Importer
 
   def files
     @files = Dir("./db/mp3s/*")
-    end
-
-  end
+ end
 
   def import(list_of_file_names)
     list_of_file_names = Dir["/db/mp3s/search/*"]
