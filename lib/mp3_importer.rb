@@ -2,6 +2,7 @@ class MP3Importer
   attr_accessor :path
 
   def initialize(test_music_path)
+    test_music_path = "./spec/fixtures/mp3s"
     @path = path
   end
 
