@@ -13,7 +13,7 @@ class Artist
   end
 
   def save
-   @all << self.new
+   @all << self.song
  end
 
  def songs
