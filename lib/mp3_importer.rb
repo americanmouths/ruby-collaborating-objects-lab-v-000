@@ -6,7 +6,7 @@ class MP3Importer
   end
 
   def files
-    Dir["./db/mp3s/*"]
+    Dir["./spec/fixtures/mp3s/*"]
  end
 
   def import(list_of_file_names)
