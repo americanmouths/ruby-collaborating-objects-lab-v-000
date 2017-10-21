@@ -19,7 +19,7 @@ class MP3Importer
     @files.delete(".")
     @files.delete("..")
     @files.each{|mp3|
-    Song.new_by_filename(filename)}
+    song = Song.new_by_filename(filename)}
   end
 
 end
