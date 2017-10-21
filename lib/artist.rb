@@ -30,10 +30,10 @@ class Artist
    @name.each do |s|
    if s.name.nil?
      s.name = Artist.new(s)
+     binding.pry
    else
      s.name = name
    end
-   binding.pry
  end
  end
 
