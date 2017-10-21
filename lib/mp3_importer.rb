@@ -9,6 +9,8 @@ class MP3Importer
     @files = Dir.entries(@path)
     @files.uniq
     @files.delete(".")
+    @files.delete("..")
+    @files
  end
 
   def import(list_of_file_names)
