@@ -32,6 +32,7 @@ class Artist
    else
      s.name = name
    end
+   binding.pry
  end
  end
 
