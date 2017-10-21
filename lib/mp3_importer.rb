@@ -14,7 +14,11 @@ class MP3Importer
  end
 
   def import
-    @files.each{|filename|
+    @files = Dir.entries(@path)
+    @files.uniq
+    @files.delete(".")
+    @files.delete("..")
+    @files.each{|mp3|
     Song.new_by_filename(filename)}
   end
 
