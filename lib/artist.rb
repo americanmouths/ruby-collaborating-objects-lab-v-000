@@ -29,7 +29,7 @@ class Artist
    if (self.name.nil?)
      Artist.new(name)
    else
-     @name
+     self.name
    end
  end
 
