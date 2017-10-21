@@ -12,7 +12,7 @@ class Artist
  end
 
  def songs
-   songs << @songs 
+   songs << @songs
  end
 
  def self.find_or_create_by_name(name)
@@ -20,6 +20,7 @@ class Artist
      self.artist = Artist.new(name)
    else
      self.artist.name = name
+   end
 
  def save
    @@all.save
