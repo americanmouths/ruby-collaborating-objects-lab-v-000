@@ -1,5 +1,4 @@
 
-require 'pry'
 class Artist
   attr_accessor :name, :song, :title
 
@@ -28,7 +27,6 @@ class Artist
 
  def self.find_or_create_by_name(name)
    self.name.nil?
-     binding.pry
  end
 
  def print_songs
