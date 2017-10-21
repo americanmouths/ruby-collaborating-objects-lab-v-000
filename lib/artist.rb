@@ -30,7 +30,6 @@ class Artist
    self.name.nil?
      binding.pry
  end
- end
 
  def print_songs
    @songs.each{|s| puts s.name}
