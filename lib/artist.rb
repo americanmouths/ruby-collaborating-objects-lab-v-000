@@ -14,7 +14,7 @@ class Artist
   end
 
   def save
-   @all << self.song
+   @all << self
  end
 
  def songs
@@ -22,7 +22,7 @@ class Artist
  end
 
  def self.find_or_create_by_name(name)
-   if (self.name.nil?)
+   if (self.artist.nil?)
      self.name = Artist.new(name)
    else
      self.artist.name = name
