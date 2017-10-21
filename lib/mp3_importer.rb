@@ -7,8 +7,7 @@ class MP3Importer
   end
 
   def files
-    @files = Dir.foreach("./db/mp3s/*") do |item|
-      item
+    Dir("./db/mp3s/*")
     end
 
   end
